@@ -33,10 +33,10 @@ class ThongTinGhe extends Component {
                         })}
                     </tbody>
                     <tfoot>
-                        <tr>
-                            <td></td>
+                        <tr className='text-warning'> 
                             <td>Tổng tiền</td>
-                            <td className='text-warning'>{this.props.danhSachGheDangDat.reduce((tongTien,gheDangDat,index)=>{
+                            <td></td>
+                            <td>{this.props.danhSachGheDangDat.reduce((tongTien,gheDangDat,index)=>{
                                 return tongTien+=gheDangDat.gia;
                             },0).toLocaleString()}</td>
                         </tr>
